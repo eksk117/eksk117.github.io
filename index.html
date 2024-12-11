@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY TOAST</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #ffffff;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            width: 100%;
+            background-color: #ffffff;
+        }
+
+        .sidebar {
+            margin-top: 30px;
+            width: 20%;
+            padding: 2%;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar h1 {
+            font-size: 24pt;
+            margin-bottom: 20px;
+            color: burlywood;
+            text-align: center;
+        }
+
+        .sidebar img {
+            width: 40%;
+            height: auto;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .sidebar button {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #a8cee5;
+            color: #a8cee5;
+            background-color: #ffffff;
+            font-size: 1vw;
+            cursor: pointer;
+        }
+
+        .sidebar button:hover {
+            background-color: #eaeaea;
+        }
+
+        .content {
+            margin-top: 50px;
+            width: 70%;
+            text-align: center;
+            padding: 2%;
+            background-color: #ffffff;
+        }
+
+        .content img {
+            width: 70%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            margin: 0 auto;
+            width: 70%;
+            font-size: 1vw;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1%;
+            font-size: 1vw;
+            background-color: #a8cee5;
+        }
+
+        .footer p {
+            color: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #a8cee5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="index.html"><h1>MY TOAST</h1></a>
+            <img src="yum-26.png">
+            <button><a href="raw.html">Raw</a></button>
+            <button><a href="rare.html">Rare</a></button>
+            <button><a href="medium.html">Medium</a></button>
+            <button><a href="well-done.html">Well-done</a></button>
+            <button><a href="burnt.html">Burnt</a></button>
+        </div>
+        <div class="content">
+            <img src="toast-25.png">
+            <p>안녕하세요 MY TOAST는 토스트 굽기에 따른 경험을 다루는 사이트입니다. raw에서는 열정적인 경험을, rare에서는 즐거운 경험을, medium에서는 편안한 경험을, 
+                well-done에서는 피곤한 경험을, burnt에서는 힘든 경험을 담고 있습니다. 각 메뉴를 클릭해 해당 내용을 확인해보세요.
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>ⓒ 2024 My TOAST  baek dana</p>
+        <p>digital &middot; media &middot; design</p>
+    </div>
+</body>
+</html>

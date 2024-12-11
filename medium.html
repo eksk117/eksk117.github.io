@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Toast</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            border-bottom: 1px solid #a8cee5;
+            flex-wrap: wrap; 
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            color: burlywood;
+        }
+
+        .header .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .header .buttons button {
+            width: 170px; 
+            padding: 10px 0;
+            font-size: 14px;
+            border: 1px solid #a8cee5;
+            color: #a8cee5;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .header .buttons button:hover {
+            background-color: #eaeaea;
+        }
+
+        .header .buttons a {
+            color: #a8cee5;
+            text-decoration: none;
+        }
+
+        .header a {
+            color: burlywood;
+            text-decoration: none;
+        }
+
+        main {
+            width: 100%;
+
+            margin-top: 20px;
+        }
+        .section-title {
+            text-align: center;
+            margin: 0 0 20px 0;
+            font-weight: bold; 
+            font-size: 18pt;
+            padding-top: 3%;
+            padding-bottom: 2%;
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+            padding-bottom: 10%;
+
+        }
+        .image-row img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+        }
+        .video-text-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 5%;
+        }
+        .video-text-row div {
+            flex: 1;
+            margin: 10px;
+        }
+        .video {
+            background-color: #ddd;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+        }
+        video {
+            width: 100%;
+            height: 400px;
+        }
+        .text-right {
+            text-align: right;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #a8cee5;
+            color: #ffffff;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><h1>MY TOAST</h1></a>
+        <div class="buttons">
+            <button><a href="raw.html">Raw</a></button>
+            <button><a href="rare.html">Rare</a></button>
+            <button><a href="medium.html">Medium</a></button>
+            <button><a href="well-done.html">Well-done</a></button>
+            <button><a href="burnt.html">Burnt</a></button>
+        </div>
+    </div>
+    <main>
+        <div class="section-title">편안했던 경험</div>
+        <div class="image-row">
+            <img src="MediImage-49.png">
+            <img src="MediImage-50.png">
+            <img src="MediImage-51.png">
+        </div>
+        <div class="video-text-row">
+            <div class="video">
+                <video controls>
+                    <source src="MediVideo1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div>
+                <h2>홍제 폭포</h2>
+                <p>사진 속 장소는 서대문구에 위치한 홍제 폭포입니다.<br> 비록 인공폭포이지만 가까이서 가만히 보고 있으면 마음이 편안해져서 담아보았습니다.</p>
+            </div>
+        </div>
+        <div class="video-text-row">
+            <div class="text-right">
+                <h2>한강 공원</h2>
+                <p>사진 속 장소는 마포구에 위치한 망원 한강 공원입니다.<br> 친구와 산책하다 쉬면서 찍은 영상이며 유유한 배와 물결들이 평화로워서 담아보았습니다.  </p>
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="MediVideo2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </main>
+    <div class="footer">
+        <p>ⓒ 2024 My TOAST  baek dana</p>
+        <p>digital &middot; media &middot; design</p>
+    </div>
+</body>
+</html>

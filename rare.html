@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rare</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            border-bottom: 1px solid #a8cee5;
+            flex-wrap: wrap; 
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            color: burlywood;
+        }
+
+        .header .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .header .buttons button {
+            width: 170px; 
+            padding: 10px 0;
+            font-size: 14px;
+            border: 1px solid #a8cee5;
+            color: #a8cee5;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .header .buttons button:hover {
+            background-color: #eaeaea;
+        }
+
+        .header .buttons a {
+            color: #a8cee5;
+            text-decoration: none;
+        }
+
+        .header a {
+            color: burlywood;
+            text-decoration: none;
+        }
+
+        .main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            padding-top: 90px;
+            text-align: center;
+        }
+
+        .main .large-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            padding-bottom: 3%;
+        }
+
+        .main .large-section img {
+            border: 1px solid #ddd;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .main .large-section .text {
+            text-align: left;
+            max-width: 50%;
+        }
+
+        .main .large-section .text h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .main .large-section .text p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .main .small-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding-top: 30px;
+        }
+
+        .main .small-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding-bottom: 80px;
+        }
+
+        .main .small-cards .card {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .main .small-cards .card img {
+            margin-bottom: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .main .small-cards .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #a8cee5;
+            color: #ffffff;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+
+        @media (max-width: 1024px) {
+            .main .large-section {
+                flex-direction: column;
+            }
+
+            .main .large-section .text {
+                max-width: 90%;
+                text-align: center;
+            }
+
+            .main .small-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.2rem;
+            }
+
+            .header .buttons button {
+                width: 140px;
+                font-size: 0.9rem;
+            }
+
+            .main .large-section .text p {
+                font-size: 0.9rem; /* 텍스트 크기 축소 */
+            }
+
+            .main .small-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header .buttons button {
+                width: 100%;
+            }
+
+            .main {
+                padding: 10px;
+            }
+
+            .main .large-section img {
+                max-width: 90%;
+            }
+
+            .footer p {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><h1>MY TOAST</h1></a>
+        <div class="buttons">
+            <button><a href="raw.html">Raw</a></button>
+            <button><a href="rare.html">Rare</a></button>
+            <button><a href="medium.html">Medium</a></button>
+            <button><a href="well-done.html">Well-done</a></button>
+            <button><a href="burnt.html">Burnt</a></button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="large-section">
+            <img src="RareImage-42.png">
+            <div class="text">
+                <h2>즐거웠던 경험</h2>
+                <p>저는 주로 갑작스럽게 맞이하는 풍경들을 찍을 때 즐거워요. 주로 길가다 우연히 본 하늘이나 길에 핀 꽃들을 찍는 것 같습니다.</p>
+                <p>그러므로 제가 찍은 풍경 사진 몇 장을 소개해드릴게요.  스크롤하여 확인 해보세요! </p>
+            </div>
+        </div>
+        <div class="small-section">
+            <h2>다양한 모습의 풍경들</h2>
+            <div class="small-cards">
+
+                <div class="card">
+                    <img src="RareImage-43.png">
+                    <h3>학교에서 본 설경</h3>
+                    <p>첫눈으로 폭설이 온 날 창문으로 바라본 바깥 풍경이에요. 파란 하늘과 하얀 나무의 모습이 인상적인 사진입니다.</p>
+                </div>
+                <div class="card">
+                    <img src="RareImage-45.png">
+                    <h3>버스에서 본 하늘</h3>
+                    <p>버스에서 밖을 구경하면 걸어서 볼 때와는 다른 풍경을 볼 수 있어서 사진을 자주 찍는 거 같아요.</p>
+                </div>
+                <div class="card">
+                    <img src="RareImage-46.png">
+                    <h3>집에서 본 창밖</h3>
+                    <p>제가 집에서 가장 좋아하는 풍경입니다. 살짝 보이는 산이 풍경을 풍부하게 해줘요.</p>
+                </div>
+                <div class="card">
+                    <img src="RareImage-47.png">
+                    <h3>등굣길에 본 풍경</h3>
+                    <p>아침에 일어나는 건 싫지만 등교하며 보이는 풍경들을 찍을 땐 재밌었던 것 같아요.</p>
+                </div>
+                <div class="card">
+                    <img src="RareImage-44.png">
+                    <h3>과제하다 발견한 풍경</h3>
+                    <p>가장 최근에 찍은 사진으로, 가을의 분위기가 잘 드러나는 사진이에요.</p>
+                </div>
+                <div class="card">
+                    <img src="RareImage-48.png">
+                    <h3>계단에서 본 풍경</h3>
+                    <p>학기 초 계단을 내려가다 화려하게 핀 개나리를 보고 바로 멈춰서서 찍었던 사진이에요.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>ⓒ 2024 My TOAST  baek dana</p>
+        <p>digital &middot; media &middot; design</p>
+    </div>
+</body>
+</html>

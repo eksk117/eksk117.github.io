@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Toast</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            border-bottom: 1px solid #a8cee5;
+            flex-wrap: wrap; 
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            color: burlywood;
+        }
+
+        .header .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .header .buttons button {
+            width: 170px; 
+            padding: 10px 0;
+            font-size: 14px;
+            border: 1px solid #a8cee5;
+            color: #a8cee5;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .header .buttons button:hover {
+            background-color: #eaeaea;
+        }
+
+        .header .buttons a {
+            color: #a8cee5;
+            text-decoration: none;
+        }
+
+        .header a {
+            color: burlywood;
+            text-decoration: none;
+        }
+            
+        .main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            padding-top: 90px;
+            padding-bottom: 7%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 0 auto;
+        }
+
+        .card {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #a8cee5;
+            color: #ffffff;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><h1>MY TOAST</h1></a>
+        <div class="buttons">
+            <button><a href="raw.html">Raw</a></button>
+            <button><a href="rare.html">Rare</a></button>
+            <button><a href="medium.html">Medium</a></button>
+            <button><a href="well-done.html">Well-done</a></button>
+            <button><a href="burnt.html">Burnt</a></button>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="grid">
+            <div class="card">
+                <img src="WellImage-52.png">
+                <h3>피곤한 소시지</h3>
+                <p>가끔씩 소시지를 어떻게 뜯어도 이상하게 뜯길 때가 있죠. 그럴 때마다 저는 맘이 피곤해집니다...</p>
+            </div>
+            <div class="card">
+                <img src="WellImage-53.png">
+                <h3>피곤한 라면</h3>
+                <p>며칠 전 있었던 일입니다. 이미 팔팔 끓는 물을 넣고 4분이나 기다린 뒤에서야 빼지 않은 스프를 발견했어요...</p>
+            </div>
+            <div class="card">
+                <img src="WellImage-54.png">
+                <h3>피곤한 버스</h3>
+                <p>저는 버스의 배차간격으로 하루 행운을 테스트 합니다. 잘못하면 사진처럼 30분을 기다려야하기 때문이에요...</p>
+            </div>
+            <div class="card">
+                <img src="WellImage-55.png">
+                <h3>피곤한 자전거</h3>
+                <p>폭우다 못해 바람까지 강하게 부는 날 집에 빨리 가고 싶은 마음에 자전거를 탔었어요. 그날은 몸이 정말 피곤했습니다...</p>
+            </div>
+            <div class="card">
+                <img src="WellImage-56.png">
+                <h3>피곤한 떡</h3>
+                <p>아르바이트를 할 때 실수한 사진입니다. 용기에 있던 떡을 모두 엎어버려서 정말 골치가 아팠습니다...</p>
+            </div>
+            <div class="card">
+                <img src="WellImage-57.png">
+                <h3>피곤한 여행</h3>
+                <p>여름 일본 여행에서 너무 더운 날씨에 많이 걸었더니 잠을 자도자도 피곤했었습니다... </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>ⓒ 2024 My TOAST  baek dana</p>
+        <p>digital &middot; media &middot; design</p>
+    </div>
+</body>
+</html>

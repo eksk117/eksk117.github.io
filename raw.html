@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>raw</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            border-bottom: 1px solid #a8cee5;
+            flex-wrap: wrap; 
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            color: burlywood;
+        }
+
+        .header .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .header .buttons button {
+            width: 170px; 
+            padding: 10px 0;
+            font-size: 14px;
+            border: 1px solid #a8cee5;
+            color: #a8cee5;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .header .buttons button:hover {
+            background-color: #eaeaea;
+        }
+
+        .header .buttons a {
+            color: #a8cee5;
+            text-decoration: none;
+        }
+
+        .header a {
+            color: burlywood;
+            text-decoration: none;
+        }
+
+        .content {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .content h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            margin-top: 2%;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-bottom: 10%;
+        }
+
+        .card {
+            width: calc(33.33% - 20px); 
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-top: -4px;
+            border-top: solid 1px #ddd;
+            border-bottom: solid 1px #ddd;
+        }
+
+        .card p {
+            font-size: 14px;
+            padding: 10px;
+            color: #555;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #a8cee5;
+            color: #ffffff;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+
+        @media (max-width: 1024px) {
+            .card {
+                width: calc(50% - 20px); 
+            }
+
+            .header .buttons button {
+                width: 140px; 
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: calc(100% - 20px); 
+            }
+
+            .header h1 {
+                font-size: 20px; 
+            }
+
+            .header .buttons button {
+                width: 120px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><h1>MY TOAST</h1></a>
+        <div class="buttons">
+            <button><a href="raw.html">Raw</a></button>
+            <button><a href="rare.html">Rare</a></button>
+            <button><a href="medium.html">Medium</a></button>
+            <button><a href="well-done.html">Well-done</a></button>
+            <button><a href="burnt.html">Burnt</a></button>
+        </div>
+    </div>
+    <div class="content">
+        <h2>열정적이었던 경험</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="RawImage-37.png">
+                <h3>사진기능사 준비</h3>
+                <p>사진기능사 자격증을 준비했던 때, 열정적으로 자주 연습했었어요. 덕분에 시험에 수월히 합격할 수 있었습니다.</p>
+            </div>
+            <div class="card">
+                <img src="RawImage-39.png">
+                <h3>지각 모면</h3>
+                <p>버스 정류장을 잘못내려서 지각할 뻔 했지만! 누구보다 빠르게 뛰어서 지각을 모면 했었어요.</p>
+            </div>
+            <div class="card">
+                <img src="RawImage-40.png">
+                <h3>스티커 그림</h3>
+                <p>간단해 보이지만 하다보면 엄청나게 열정적인 스스로의 모습을 발견할 수 있어요. 다 하고 느껴지는 뿌듯함은 덤입니다.</p>
+            </div>
+            <div class="card">
+                <img src="RawImage-36.png">
+                <h3>아이스 스케이트</h3>
+                <p>스케이트를 타다보면 나도 모르게 모르는 사람과 경쟁하게 돼요. 스포츠는 언제나 열정적으로 임하게 되는 거 같습니다.</p>
+            </div>
+            <div class="card">
+                <img src="RawImage-38.png">
+                <h3>도자기 그림 그리기</h3>
+                <p>도자기에 꽃을 그려 넣었어요. 다른 친구들에 비해 작업이 매우 오래 걸렸지만 결과물은 제일 칭찬 받았던 기억이 납니다.</p>
+            </div>
+            <div class="card">
+                <img src="RawImage-41.png">
+                <h3>루미큐브</h3>
+                <p>루미큐브라는 게임에 꽂혀서 거액의 코인을 모았었어요. 지금하라면 다시 못 할 거 같을 정도로 열심히 했었습니다...</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>ⓒ 2024 My TOAST  baek dana</p>
+        <p>digital &middot; media &middot; design</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Toast</title>
+    <style>
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid #a8cee5;
+    flex-wrap: wrap; 
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    color: burlywood;
+}
+
+.header a {
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+.header .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header .buttons button {
+    width: 170px; 
+    padding: 10px 0;
+    font-size: 14px;
+    border: 1px solid #a8cee5;
+    color: #a8cee5;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.header .buttons button:hover {
+    background-color: #eaeaea;
+}
+
+.header .buttons a {
+    color: #a8cee5;
+    text-decoration: none;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.main .large-image {
+    width: 100%;
+    height: 300px;
+    background-color: #eaeaea;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.main .large-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main .content-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.main .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .content .left {
+    flex: 3;
+}
+
+.main .content .left .item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.main .content .left .item img {
+    width: 200px;
+    height: 200px;
+}
+
+.main .content .left .item p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #a8cee5;
+    color: #ffffff;
+    border-top: 1px solid #ddd;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .main .content {
+        flex-direction: column;
+    }
+
+    .main .content .right {
+        text-align: left;
+        margin-top: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><h1>MY TOAST</h1></a>
+        <div class="buttons">
+            <button><a href="raw.html">Raw</a></button>
+            <button><a href="rare.html">Rare</a></button>
+            <button><a href="medium.html">Medium</a></button>
+            <button><a href="well-done.html">Well-done</a></button>
+            <button><a href="burnt.html">Burnt</a></button>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="large-image">
+            <img src="BurntImage-34.png">
+        </div>
+        <h2 class="content-title">힘들었던 경험</h2>
+        <div class="content">
+            <div class="left">
+                <div class="item">
+                    <img src="BurntImage-58.png">
+                    <p>초코맛 음료가 먹고 싶어서 시켰던 음료입니다.<br> 피스타치오 맛이나는 매우 맛없는 음료여서 다 먹기 정말 힘들었어요. 매우 비추천합니다. </p>
+                </div>
+                <div class="item">
+                    <img src="BurntImage-59.png">
+                    <p>광고사진 촬영 현장에서 찍은 사진입니다.<br> 고속동조에 관한 촬영이었는데 파스텔이 흩날리는 순간을 담는 촬영이라 뒷정리가 매우 힘들었어요.</p>
+                </div>
+                <div class="item">
+                    <img src="BurntImage-60.png">
+                    <p>유니티를 실행하다가 무수한 오류를 발견하곤 맘이 힘들어져 찍은 사진입니다.<br>너무 힘들었던 과목이라 기억에 남는 것 같아요.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>ⓒ 2024 My TOAST  baek dana</p>
+        <p>digital &middot; media &middot; design</p>
+    </div>
+</body>
+</html>
